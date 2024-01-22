@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISleep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Untitled-2.css">
+    <link rel="stylesheet" href="dist/simple-lightboxmi.css">
+    <link rel="stylesheet" href="dist/simple-lightbox.min.js">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script defer src="Untitled-3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+ 
+  </head>
+<body>
+
+<section id="container">
+    <div class="container">
+    
+      <h1 class="heading">OUR SERVICES <span></span></h1>
+    
+      <div class="box-container">
+    
+          <div class="box">
+            <i class="fa-brands fa-chromecast"></i>
+              <h3>1</h3>
+              <p>Select date using date <br>picker</p>
+              <button data-modal-target="#modal">Date picker</button>
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">SET DATE USING DATE PICKER</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+              <div class="modal-body">
+                <p>Date: <input type="text" id="datepicker"></p>
+              </div>
+              <script>
+                $( function() {
+                  $( "#datepicker" ).datepicker();
+                } );
+                </script>
+            </div>
+
+          <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+              <h3>2</h3>
+              <p>Select sleep time in hour and minutes</p>
+              <a href="demo.html">
+              <button data-modal-target="#modal">Sleep time</button>
+              </a> 
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">SET SLEEP TIME</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+              <div class="modal-body">
+                
+              </div>
+            </div>
+          </div>
+    
+          <div class="box">
+              <i class="fa-solid fa-eye"></i>
+              <h3>3</h3>
+              <p>Select wakeup time in hour and minutes</p>
+              <a href="Wakeup.html">
+              <button data-modal-target="#modal">Wakeup time</button>
+              </a>
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">SET SLEEP TIME</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+              <div class="modal-body">
+                <p>Date: <input type="text" id="datepicker"></p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="box">
+            <i class="fa-solid fa-desktop"></i>
+              <h3>4</h3>
+              <p>Calculate total sleep <br>duration</p>
+              <button data-modal-target="#modal">Calculate total sleep time</button>
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">SET SLEEP TIME</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+              <div class="modal-body">
+                <p>Date: <input type="text" id="datepicker"></p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="box">
+            <i class="fa-solid fa-moon"></i>
+              <h3>5</h3>
+              <p>Include reset, cancel, and submit buttons</p>
+              <button data-modal-target="#modal">buttons</button>
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="title">SET SLEEP TIME</div>
+                  <button data-close-button class="close-button">&times;</button>
+                </div>
+              <div class="modal-body">
+                <p>Date: <input type="text" id="datepicker"></p>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    
+    </div>
+    </section>
+    <div id="overlay"></div>
+    </body>
+    </html>
